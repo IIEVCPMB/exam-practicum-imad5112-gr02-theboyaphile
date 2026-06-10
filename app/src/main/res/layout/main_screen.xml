@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/splashLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="visible"
+        tools:ignore="UseCompoundDrawables,UselessParent">
+
+        <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+            android:contentDescription="Campsite Commander"
+            android:src="@drawable/camping"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Campsite Commander"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="9dp"
+            android:text="Loading gear..."
+            android:textColor="#546E7A"
+            tools:ignore="HardcodedText" />
+    </LinearLayout>
+
+    <LinearLayout
+            android:id="@+id/mainLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Camp Commander"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginVertical="24dp"
+            tools:ignore="HardcodedText" />
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="#EF5E9"
+            android:padding="24sp"
+            android:gravity="center"
+            android:layout_marginBottom="40dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Items Packed"
+            android:textSize="16sp"
+            android:textColor="#4CAF50"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/txtTotalCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="64sp"
+            android:textStyle="bold"
+            android:textColor="#2E7D32"
+            tools:ignore="HardcodedText" />
+
+
+        <Button
+            android:id="@+id/btnToAdd"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="View detailed Gear List"
+            android:backgroundTint="#4CAF50"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/btnGoToDetail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="View detailed Gear List"
+            android:backgroundTint="#4CAF50"
+            tools:ignore="HardcodedText"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/detailslayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Packed Gear Details"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:gravity="center_horizontal"
+            android:layout_marginVertical="16dp"
+            tools:ignore="HardcodedText"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            tools:ignore="InefficientWeight">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="No Items"
+            android:textSize="16sp"
+            android:lineSpacingExtra="8sp"
+            android:padding="8dp"
+            tools:ignore="HardcodedText" />
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</LinearLayout>
